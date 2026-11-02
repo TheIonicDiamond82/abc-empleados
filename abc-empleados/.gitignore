@@ -41,4 +41,8 @@ __screenshots__/
 # Package-lock 
 package-lock.json
 
-node_modules
+# Node Modules
+node_modules/
+
+.env
+.env.example
