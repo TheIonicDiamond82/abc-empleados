@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://theionicdiamond82.github.io/abc-empleados/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
