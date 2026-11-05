@@ -66,6 +66,6 @@ async list(query) {
     return httpClient.put(API_PATHS.departmentById(id), payload).then((response) => response.data)
   },
   remove(id) {
-    return httpClient.delete(API_PATHS.departmentById(id)).then((response) => response.data)
-  },
+    return httpClient.patch(API_PATHS.departmentStatus(id), false)
+      .then((response) => response.data)  },
 }

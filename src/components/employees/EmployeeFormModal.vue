@@ -68,10 +68,12 @@ function mapEmployee(employee) {
 }
 
 function submit() {
+  console.log("Props employee:", props.employee)
   errors.value = validateEmployee(form)
   if (hasErrors(errors.value)) return
   emit('submit', {
     ...form,
+    employeeNumber: props.employee?.employeeNumber,
     departmentId: Number(form.departmentId),
     positionId: Number(form.positionId),
     salary: Number(form.salary),

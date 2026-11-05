@@ -32,6 +32,6 @@ list(query) {
     return httpClient.put(API_PATHS.positionById(id), payload).then((response) => response.data)
   },
   remove(id) {
-    return httpClient.delete(API_PATHS.positionById(id)).then((response) => response.data)
-  },
+    return httpClient.patch(API_PATHS.positionStatus(id), false)
+      .then((response) => response.data)  },
 }
